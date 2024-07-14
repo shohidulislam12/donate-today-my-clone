@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
 }
+
 .section-1{
     margin-top: 20px;
     height: 435px;
@@ -82,12 +83,15 @@ margin-top: 20px;
     .section-1{
         margin-top: 20px;
         height: 435px;
+        width: 990px;
     
     }
     .section-1-div1{
        
-        width: 900px;
+        width: 990px;
         height: 500px;
+        align-items: center;
+        display: flex;
     }
     
     h1{
@@ -99,3 +103,264 @@ margin-top: 20px;
     letter-spacing: 0px;
     }
 }
+
+.section-2{
+    width: 1240px;
+    height: 500px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+margin-top: 20px;
+}
+.section-2-div1{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 45%;
+    text-align: center;
+}
+h2{
+    color: rgb(18, 18, 18);
+font-family: Inter;
+font-size: 45px;
+font-weight: 700;
+line-height: 44px;
+letter-spacing: 0px;
+text-align: center;
+}
+.section-2-p{
+    font-family: Poppins;
+font-size: 15px;
+font-weight: 400;
+line-height: 20px;
+margin-top: 20px;
+}
+.section-2-div2{
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    margin-top: 40px;
+}
+.taka{
+    height: 100px;
+    width: 100px;
+    background-color: antiquewhite;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    margin-bottom: 20px;
+
+}
+.section-1-div3{
+    border-bottom: 1px solid black;
+    width: 40%;
+    text-align: center;
+    padding: 10px;
+}
+/* responsible section-2 for 576px */
+@media screen and (max-width:576px){
+    .section-2{
+        width: 574px;
+    margin-top: 0px;
+    height: 400px;
+    border: 2px solid red;
+
+    }
+    .section-2-div1{
+        width: 75%;
+    }
+    .section-2-p{
+    font-weight: 400;
+    line-height: 20px;
+    margin-top: 10px;
+    }
+    .section-1-div3{
+        width: 60%;
+    }
+
+
+}
+/* responsible section-2 for tablet */
+@media screen and (min-width:577px)  and (max-width:990px){
+    .section-2{
+        width:990px;
+    margin-top: 0px;
+    height: 500px;
+    border: 2px solid red;
+    align-items: center;
+    }
+    .section-2-div1{
+        width: 45%;
+    }
+    .section-2-p{
+    font-weight: 400;
+    line-height: 20px;
+    margin-top: 10px;
+    }
+    .section-1-div3{
+        width: 50%;
+    }
+}
+
+/* section3 */
+  .section-3{
+    height: 500px;
+    width: 1240px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+.section-3-div1{
+    height: 150px;
+    margin-top: 40px;
+    width: 575px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.card-container{
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+.card-1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+    width: 300px;
+    border-radius: 5px;
+    line-height: 30px;
+background: rgba(79, 157, 166, 0.1);
+padding: 10px;
+}
+.card-2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+    width: 300px;
+    border-radius: 5px;
+    line-height: 30px;
+    background: rgba(255, 89, 89, 0.1);
+padding: 10px;
+}
+.card-3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+    width: 300px;
+    border-radius: 5px;
+    line-height: 30px;
+    background: rgb(230, 230, 173);
+padding: 10px;
+}
+/* responsible section-3 for 576px */
+@media screen and (max-width:576px){
+    .section-3{
+        margin: 0 auto;
+        height: auto;
+        width: 550px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 30px;
+        border: 2px solid red;
+        padding-bottom: 20px;
+      }
+    .section-3-div1{
+        height: 150px;
+        margin-top: 10px;
+        width: 550px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 30px;
+        margin-top: 10;
+    }
+    .card-container{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        margin-top: 0;
+        padding-top: 0;
+    }
+    .card-1 ,.card-3 ,.card-2{
+        height: 400px;
+        width: 400px;
+
+    }
+
+}
+/* responsible section-3 for tablet */
+@media screen and (min-width:577px)  and (max-width:990px){
+    .section-3{
+        height: 600px;
+        width: 950px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border: 2px solid red;
+        margin-bottom: 30px;
+      }
+    .section-3-div1{
+        height: 150px;
+        margin-top: 40px;
+        width: 575px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .card-container{
+        display: flex;
+        justify-content: space-between;
+        gap: 40px;
+    }
+    .card-1{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 300px;
+        width: 250px;
+        border-radius: 5px;
+        line-height: 30px;
+    background: rgba(79, 157, 166, 0.1);
+    padding: 10px;
+    }
+    .card-2{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 300px;
+        width: 250px;
+        border-radius: 5px;
+        line-height: 30px;
+        background: rgba(255, 89, 89, 0.1);
+    padding: 10px;
+    }
+    .card-3{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 300px;
+        width: 250px;
+        border-radius: 5px;
+        line-height: 30px;
+        background: rgb(230, 230, 173);
+    padding: 10px;
+    }
+}
+
+
+
+
+
